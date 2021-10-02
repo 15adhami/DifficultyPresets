@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>	
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>imranfish.difficultypresets</modId>
+		<key>toggleDiff1</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<DifficultyDef>
+						<defName>imranfish_difficultypresets_preset1</defName>
+						<description>Custom preset 1</description>
+					</DifficultyDef>
+				</value>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>labelDiff1</key>
+				<defaultValue>Preset 1</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<label>{labelDiff1}</label>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>threatDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>threatDiff1c</storeIn>
+						<value>{threatDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<threatScale>{threatDiff1c}</threatScale>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>majorThreatsDiff1</key>
+				<defaultValue>true</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<allowBigThreats>{majorThreatsDiff1}</allowBigThreats>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>questThreatsDiff1</key>
+				<defaultValue>true</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<allowViolentQuests>{questThreatsDiff1}</allowViolentQuests>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>introThreatsDiff1</key>
+				<defaultValue>true</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<allowIntroThreats>{introThreatsDiff1}</allowIntroThreats>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>predatorHuntDiff1</key>
+				<defaultValue>true</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<predatorsHuntHumanlikes>{predatorHuntDiff1}</predatorsHuntHumanlikes>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>extremeWeatherDiff1</key>
+				<defaultValue>true</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<allowExtremeWeatherIncidents>{extremeWeatherDiff1}</allowExtremeWeatherIncidents>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>harvestYieldDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>harvestYieldDiff1c</storeIn>
+						<value>{harvestYieldDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<cropYieldFactor>{harvestYieldDiff1c}</cropYieldFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>miningYieldDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>miningYieldDiff1c</storeIn>
+						<value>{miningYieldDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<mineYieldFactor>{miningYieldDiff1c}</mineYieldFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>butcheringYieldDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>butcheringYieldDiff1c</storeIn>
+						<value>{butcheringYieldDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<butcherYieldFactor>{butcheringYieldDiff1c}</butcherYieldFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>researchSpeedDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>researchSpeedDiff1c</storeIn>
+						<value>{researchSpeedDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<researchSpeedFactor>{researchSpeedDiff1c}</researchSpeedFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>questRewardsDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>questRewardsDiff1c</storeIn>
+						<value>{questRewardsDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<questRewardValueFactor>{questRewardsDiff1c}</questRewardValueFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>raidLootDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>raidLootDiff1c</storeIn>
+						<value>{raidLootDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<raidLootPointsFactor>{raidLootDiff1c}</raidLootPointsFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>priceDisadvantageDiff1</key>
+				<defaultValue>0</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>priceDisadvantageDiff1c</storeIn>
+						<value>{priceDisadvantageDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<tradePriceFactorLoss>{priceDisadvantageDiff1c}</tradePriceFactorLoss>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>turretRearmDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>turretRearmDiff1c</storeIn>
+						<value>{turretRearmDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<maintenanceCostFactor>{turretRearmDiff1c}</maintenanceCostFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>scariaRotDiff1</key>
+				<defaultValue>60</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>scariaRotDiff1c</storeIn>
+						<value>{scariaRotDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<scariaRotChance>{scariaRotDiff1c}</scariaRotChance>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>deathOnDownedDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>deathOnDownedDiff1c</storeIn>
+						<value>{deathOnDownedDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<enemyDeathOnDownedChanceFactor>{deathOnDownedDiff1c}</enemyDeathOnDownedChanceFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>moodOffsetDiff1</key>
+				<defaultValue>0</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<colonistMoodOffset>{moodOffsetDiff1}</colonistMoodOffset>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>foodPoisonDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>foodPoisonDiff1c</storeIn>
+						<value>{foodPoisonDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<foodPoisonChanceFactor>{foodPoisonDiff1c}</foodPoisonChanceFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>animalRevengeDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>animalRevengeDiff1c</storeIn>
+						<value>{animalRevengeDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<manhunterChanceOnDamageFactor>{animalRevengeDiff1c}</manhunterChanceOnDamageFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>infectionChanceDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>infectionChanceDiff1c</storeIn>
+						<value>{infectionChanceDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<playerPawnInfectionChanceFactor>{infectionChanceDiff1c}</playerPawnInfectionChanceFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>diseaseFrequencyDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>diseaseFrequencyDiff1c</storeIn>
+						<value>{diseaseFrequencyDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<diseaseIntervalFactor>{diseaseFrequencyDiff1c}</diseaseIntervalFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>insectSpawnDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>insectSpawnDiff1c</storeIn>
+						<value>{insectSpawnDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<enemyReproductionRateFactor>{insectSpawnDiff1c}</enemyReproductionRateFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>deepDrillInfestationsDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>deepDrillInfestationsDiff1c</storeIn>
+						<value>{deepDrillInfestationsDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<deepDrillInfestationChanceFactor>{deepDrillInfestationsDiff1c}</deepDrillInfestationChanceFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>ancientThreatDiff1</key>
+				<defaultValue>true</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>ancientThreatDiff1c</storeIn>
+						<value>{ancientThreatDiff1}</value>
+						<operation>negate</operation>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<peacefulTemples>{ancientThreatDiff1c}</peacefulTemples>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>					
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>naturalHivesDiff1</key>
+				<defaultValue>true</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<allowCaveHives>{naturalHivesDiff1}</allowCaveHives>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>trapsDiff1</key>
+				<defaultValue>true</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<allowTraps>{trapsDiff1}</allowTraps>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>turretsDiff1</key>
+				<defaultValue>true</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<allowTurrets>{turretsDiff1}</allowTurrets>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>mortarsDiff1</key>
+				<defaultValue>true</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<allowMortars>{mortarsDiff1}</allowMortars>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>classicMortarsDiff1</key>
+				<defaultValue>false</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<classicMortars>{classicMortarsDiff1}</classicMortars>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>adaptationGrowthDiff1</key>
+				<defaultValue>100</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>adaptationGrowthDiff1c</storeIn>
+						<value>{adaptationGrowthDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<adaptationGrowthRateFactorOverZero>{adaptationGrowthDiff1c}</adaptationGrowthRateFactorOverZero>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>					
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>adaptationImpactDiff1</key>
+				<defaultValue>90</defaultValue>
+				<apply>
+					<Operation Class="XmlExtensions.CreateVariable">
+						<storeIn>adaptationImpactDiff1c</storeIn>
+						<value>{adaptationImpactDiff1}</value>
+						<operation>/</operation>
+						<value2>100</value2>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+								<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+								<value>
+									<adaptationEffectFactor>{adaptationImpactDiff1c}</adaptationEffectFactor>
+								</value>
+							</Operation>
+						</apply>
+					</Operation>					
+				</apply>
+			</Operation>
+			
+			<Operation Class="XmlExtensions.UseSetting">
+				<modId>imranfish.difficultypresets</modId>
+				<key>wealthIndDiff1</key>
+				<defaultValue>false</defaultValue>
+				<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+						<value>
+							<fixedWealthMode>{wealthIndDiff1}</fixedWealthMode>
+						</value>
+					</Operation>
+				</apply>
+			</Operation>
+			
+			<Operation Class="PatchOperationFindMod">
+				<mods>
+					<li>Ideology</li>
+				</mods>
+				<match Class="XmlExtensions.UseSetting">
+					<modId>imranfish.difficultypresets</modId>
+					<key>lowPopDiff1</key>
+					<defaultValue>3</defaultValue>
+					<apply>
+						<Operation Class="PatchOperationAdd">
+							<xpath>/Defs/DifficultyDef[defName="imranfish_difficultypresets_preset1"]</xpath>
+							<value>
+								<lowPopConversionBoost>{lowPopDiff1}</lowPopConversionBoost>
+							</value>
+						</Operation>
+					</apply>
+				</match>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	
+</Patch>

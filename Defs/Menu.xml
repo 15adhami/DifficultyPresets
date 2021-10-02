@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<XmlExtensions.SettingsMenuDef>
+		<modId>imranfish.difficultypresets</modId>
+		<label>Difficulty Presets</label>
+		<tKey>imranfish_difficultypresets_label</tKey>
+		<defName>imranfish_difficultypresets</defName>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Difficulty Presets</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+				<tKey>imranfish_difficultypresets_label</tKey>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine"/>		
+			<li Class="XmlExtensions.Setting.SplitColumnPixels">
+				<leftCol>
+					<li Class="XmlExtensions.Setting.Section">
+						<settings>
+							<li Class="XmlExtensions.Setting.Gap">
+								<spacing>11</spacing>
+							</li>
+							<li Class="XmlExtensions.Setting.SplitColumn">
+								<leftCol>
+									<li Class="XmlExtensions.Setting.SplitColumn">
+										<split>0.25</split>
+										<leftCol>
+											<li Class="XmlExtensions.Setting.Text">
+												<text>Name</text>
+												<tKey>imranfish_difficultypresets_name</tKey>
+											</li>
+										</leftCol>
+										<rightCol>
+											<li Class="XmlExtensions.Setting.Textbox">
+												<key>labelDiff1</key>
+												<defaultValue>Preset 1</defaultValue>
+											</li>
+										</rightCol>
+									</li>
+								</leftCol>
+								<rightCol>
+									<li Class="XmlExtensions.Setting.Checkbox">
+										<key>toggleDiff1</key>
+										<label>Enabled?</label>
+										<defaultValue>true</defaultValue>
+										<tKey>imranfish_difficultypresets_enabled</tKey>
+									</li>
+								</rightCol>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>Threats</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_threats</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>threatDiff1</key>
+								<label>Threat scale: {threatDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_threatscale</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>majorThreatsDiff1</key>
+								<label>Major threats</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_majorthreats</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>questThreatsDiff1</key>
+								<label>Quest threats</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_questthreats</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>introThreatsDiff1</key>
+								<label>Intro threats</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_introthreats</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>predatorHuntDiff1</key>
+								<label>Predators hunt humans</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_predhunt</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>extremeWeatherDiff1</key>
+								<label>Extreme weather</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_extremeweather</tKey>
+							</li>					
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>Economy</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_economy</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>harvestYieldDiff1</key>
+								<label>Harvest yield: {harvestYieldDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_harvestyield</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>miningYieldDiff1</key>
+								<label>Mining yield: {miningYieldDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_miningyield</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>butcheringYieldDiff1</key>
+								<label>Butchering yield: {butcheringYieldDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_butcheringyield</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>researchSpeedDiff1</key>
+								<label>Research speed: {researchSpeedDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_researchspeed</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>questRewardsDiff1</key>
+								<label>Quest rewards: {questRewardsDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_questrewards</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>raidLootDiff1</key>
+								<label>Raid loot: {raidLootDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_raidloot</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>priceDisadvantageDiff1</key>
+								<label>Trade price disadvantage: -{priceDisadvantageDiff1}%</label>
+								<defaultValue>0</defaultValue>
+								<min>0</min>
+								<max>50</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_tradepricedisadvantage</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>turretRearmDiff1</key>
+								<label>Turret rearm cost: {turretRearmDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_turretrearm</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>scariaRotDiff1</key>
+								<label>Scaria rot chance: {scariaRotDiff1}%</label>
+								<defaultValue>60</defaultValue>
+								<min>0</min>
+								<max>100</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_scariarot</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>deathOnDownedDiff1</key>
+								<label>Enemy death on downed: {deathOnDownedDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>100</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_deathondowned</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>General</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_general</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>moodOffsetDiff1</key>
+								<label>Colonist mood offset: {moodOffsetDiff1}</label>
+								<defaultValue>0</defaultValue>
+								<min>-20</min>
+								<max>20</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_moodoffset</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>foodPoisonDiff1</key>
+								<label>Food poison chance: {foodPoisonDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_foodpoison</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>animalRevengeDiff1</key>
+								<label>Animal revenge chance: {animalRevengeDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_animalrevenge</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>infectionChanceDiff1</key>
+								<label>Infection chance: {infectionChanceDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_infectionchance</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>diseaseFrequencyDiff1</key>
+								<label>Disease frequency: {diseaseFrequencyDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_diseasefreq</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>insectSpawnDiff1</key>
+								<label>Insect spawning rate: {insectSpawnDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_insectspawn</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>deepDrillInfestationsDiff1</key>
+								<label>Deep drilling infestations: {deepDrillInfestationsDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_deepdrilling</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>ancientThreatDiff1</key>
+								<label>Map generation ancient threats</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_ancientthreats</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>naturalHivesDiff1</key>
+								<label>Map generation natural hives</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_naturalhives</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>Player tools</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_playertools</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>trapsDiff1</key>
+								<label>Player can build traps</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_buildtraps</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>turretsDiff1</key>
+								<label>Player can build turrets</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_buildturrets</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>mortarsDiff1</key>
+								<label>Player can build mortars</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_buildmortars</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>classicMortarsDiff1</key>
+								<label>Classic mortars</label>
+								<defaultValue>false</defaultValue>
+								<tKey>imranfish_difficultypresets_classicmortars</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>Adaptation</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_adaptation</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>adaptationGrowthDiff1</key>
+								<label>Adaptation growth rate: {adaptationGrowthDiff1}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>100</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_adaptationgrowthrate</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>adaptationImpactDiff1</key>
+								<label>Adaptation impact: {adaptationImpactDiff1}%</label>
+								<defaultValue>90</defaultValue>
+								<min>0</min>
+								<max>100</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_adaptationimpact</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>wealthIndDiff1</key>
+								<label>Wealth-independant progress mode</label>
+								<defaultValue>false</defaultValue>
+								<tKey>imranfish_difficultypresets_wealthmode</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>Ideology</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_ideology</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>lowPopDiff1</key>
+								<label>Low pop conversion boost: {lowPopDiff1}00%</label>
+								<defaultValue>3</defaultValue>
+								<min>1</min>
+								<max>5</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_lowpop</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.ResetSettings">
+								<message>Are you sure you want to reset this preset?</message>
+								<tKeyMessage>imranfish_difficultypresets_resetpreset</tKeyMessage>
+								<keys>
+									<li>lowPopDiff1</li>
+									<li>wealthIndDiff1</li>
+									<li>adaptationImpactDiff1</li>
+									<li>adaptationGrowthDiff1</li>
+									<li>classicMortarsDiff1</li>
+									<li>mortarsDiff1</li>
+									<li>turretsDiff1</li>
+									<li>trapsDiff1</li>
+									<li>naturalHivesDiff1</li>
+									<li>ancientThreatDiff1</li>
+									<li>deepDrillInfestationsDiff1</li>
+									<li>insectSpawnDiff1</li>
+									<li>diseaseFrequencyDiff1</li>
+									<li>infectionChanceDiff1</li>
+									<li>animalRevengeDiff1</li>
+									<li>foodPoisonDiff1</li>
+									<li>moodOffsetDiff1</li>
+									<li>deathOnDownedDiff1</li>
+									<li>scariaRotDiff1</li>
+									<li>turretRearmDiff1</li>
+									<li>priceDisadvantageDiff1</li>
+									<li>raidLootDiff1</li>
+									<li>questRewardsDiff1</li>
+									<li>researchSpeedDiff1</li>
+									<li>butcheringYieldDiff1</li>
+									<li>miningYieldDiff1</li>
+									<li>harvestYieldDiff1</li>
+									<li>extremeWeatherDiff1</li>
+									<li>predatorHuntDiff1</li>
+									<li>introThreatsDiff1</li>
+									<li>questThreatsDiff1</li>
+									<li>majorThreatsDiff1</li>
+									<li>threatDiff1</li>
+									<li>toggleDiff1</li>
+									<li>labelDiff1</li>
+								</keys>
+							</li>
+						</settings>
+					</li>					
+				</leftCol>
+				
+				
+				<rightCol>
+					<li Class="XmlExtensions.Setting.Section">
+						<settings>
+							<li Class="XmlExtensions.Setting.Gap">
+								<spacing>11</spacing>
+							</li>
+							<li Class="XmlExtensions.Setting.SplitColumn">
+								<leftCol>
+									<li Class="XmlExtensions.Setting.SplitColumn">
+										<split>0.25</split>
+										<leftCol>
+											<li Class="XmlExtensions.Setting.Text">
+												<text>Name</text>
+												<tKey>imranfish_difficultypresets_name</tKey>
+											</li>
+										</leftCol>
+										<rightCol>
+											<li Class="XmlExtensions.Setting.Textbox">
+												<key>labelDiff2</key>
+												<defaultValue>Preset 2</defaultValue>
+											</li>
+										</rightCol>
+									</li>
+								</leftCol>
+								<rightCol>
+									<li Class="XmlExtensions.Setting.Checkbox">
+										<key>toggleDiff2</key>
+										<label>Enabled?</label>
+										<defaultValue>false</defaultValue>
+										<tKey>imranfish_difficultypresets_enabled</tKey>
+									</li>
+								</rightCol>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>Threats</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_threats</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>threatDiff2</key>
+								<label>Threat scale: {threatDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_threatscale</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>majorThreatsDiff2</key>
+								<label>Major threats</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_majorthreats</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>questThreatsDiff2</key>
+								<label>Quest threats</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_questthreats</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>introThreatsDiff2</key>
+								<label>Intro threats</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_introthreats</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>predatorHuntDiff2</key>
+								<label>Predators hunt humans</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_predhunt</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>extremeWeatherDiff2</key>
+								<label>Extreme weather</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_extremeweather</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>Economy</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_economy</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>harvestYieldDiff2</key>
+								<label>Harvest yield: {harvestYieldDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_harvestyield</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>miningYieldDiff2</key>
+								<label>Mining yield: {miningYieldDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_miningyield</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>butcheringYieldDiff2</key>
+								<label>Butchering yield: {butcheringYieldDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_butcheringyield</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>researchSpeedDiff2</key>
+								<label>Research speed: {researchSpeedDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_researchspeed</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>questRewardsDiff2</key>
+								<label>Quest rewards: {questRewardsDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_questrewards</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>raidLootDiff2</key>
+								<label>Raid loot: {raidLootDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_raidloot</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>priceDisadvantageDiff2</key>
+								<label>Trade price disadvantage: -{priceDisadvantageDiff2}%</label>
+								<defaultValue>0</defaultValue>
+								<min>0</min>
+								<max>50</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_tradepricedisadvantage</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>turretRearmDiff2</key>
+								<label>Turret rearm cost: {turretRearmDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_turretrearm</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>scariaRotDiff2</key>
+								<label>Scaria rot chance: {scariaRotDiff2}%</label>
+								<defaultValue>60</defaultValue>
+								<min>0</min>
+								<max>100</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_scariarot</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>deathOnDownedDiff2</key>
+								<label>Enemy death on downed: {deathOnDownedDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>100</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_deathondowned</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>General</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_general</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>moodOffsetDiff2</key>
+								<label>Colonist mood offset: {moodOffsetDiff2}</label>
+								<defaultValue>0</defaultValue>
+								<min>-20</min>
+								<max>20</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_moodoffset</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>foodPoisonDiff2</key>
+								<label>Food poison chance: {foodPoisonDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_foodpoison</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>animalRevengeDiff2</key>
+								<label>Animal revenge chance: {animalRevengeDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_animalrevenge</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>infectionChanceDiff2</key>
+								<label>Infection chance: {infectionChanceDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_infectionchance</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>diseaseFrequencyDiff2</key>
+								<label>Disease frequency: {diseaseFrequencyDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_diseasefreq</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>insectSpawnDiff2</key>
+								<label>Insect spawning rate: {insectSpawnDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_insectspawn</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>deepDrillInfestationsDiff2</key>
+								<label>Deep drilling infestations: {deepDrillInfestationsDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>500</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_deepdrilling</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>ancientThreatDiff2</key>
+								<label>Map generation ancient threats</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_ancientthreats</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>naturalHivesDiff2</key>
+								<label>Map generation natural hives</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_naturalhives</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>Player tools</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_playertools</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>trapsDiff2</key>
+								<label>Player can build traps</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_buildtraps</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>turretsDiff2</key>
+								<label>Player can build turrets</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_buildturrets</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>mortarsDiff2</key>
+								<label>Player can build mortars</label>
+								<defaultValue>true</defaultValue>
+								<tKey>imranfish_difficultypresets_buildmortars</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>classicMortarsDiff2</key>
+								<label>Classic mortars</label>
+								<defaultValue>false</defaultValue>
+								<tKey>imranfish_difficultypresets_classicmortars</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>Adaptation</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_adaptation</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>adaptationGrowthDiff2</key>
+								<label>Adaptation growth rate: {adaptationGrowthDiff2}%</label>
+								<defaultValue>100</defaultValue>
+								<min>0</min>
+								<max>100</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_adaptationgrowthrate</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>adaptationImpactDiff2</key>
+								<label>Adaptation impact: {adaptationImpactDiff2}%</label>
+								<defaultValue>90</defaultValue>
+								<min>0</min>
+								<max>100</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_adaptationimpact</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Checkbox">
+								<key>wealthIndDiff2</key>
+								<label>Wealth-independant progress mode</label>
+								<defaultValue>false</defaultValue>
+								<tKey>imranfish_difficultypresets_wealthmode</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.GapLine"/>
+							<li Class="XmlExtensions.Setting.Text">
+								<text>Ideology</text>
+								<anchor>Middle</anchor>
+								<tKey>imranfish_difficultypresets_ideology</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.Slider">
+								<key>lowPopDiff2</key>
+								<label>Low pop conversion boost: {lowPopDiff2}00%</label>
+								<defaultValue>3</defaultValue>
+								<min>1</min>
+								<max>5</max>
+								<decimals>0</decimals>
+								<tKey>imranfish_difficultypresets_lowpop</tKey>
+							</li>
+							<li Class="XmlExtensions.Setting.ResetSettings">
+								<message>Are you sure you want to reset this preset?</message>
+								<tKeyMessage>imranfish_difficultypresets_resetpreset</tKeyMessage>
+								<keys>
+									<li>lowPopDiff2</li>
+									<li>wealthIndDiff2</li>
+									<li>adaptationImpactDiff2</li>
+									<li>adaptationGrowthDiff2</li>
+									<li>classicMortarsDiff2</li>
+									<li>mortarsDiff2</li>
+									<li>turretsDiff2</li>
+									<li>trapsDiff2</li>
+									<li>naturalHivesDiff2</li>
+									<li>ancientThreatDiff2</li>
+									<li>deepDrillInfestationsDiff2</li>
+									<li>insectSpawnDiff2</li>
+									<li>diseaseFrequencyDiff2</li>
+									<li>infectionChanceDiff2</li>
+									<li>animalRevengeDiff2</li>
+									<li>foodPoisonDiff2</li>
+									<li>moodOffsetDiff2</li>
+									<li>deathOnDownedDiff2</li>
+									<li>scariaRotDiff2</li>
+									<li>turretRearmDiff2</li>
+									<li>priceDisadvantageDiff2</li>
+									<li>raidLootDiff2</li>
+									<li>questRewardsDiff2</li>
+									<li>researchSpeedDiff2</li>
+									<li>butcheringYieldDiff2</li>
+									<li>miningYieldDiff2</li>
+									<li>harvestYieldDiff2</li>
+									<li>extremeWeatherDiff2</li>
+									<li>predatorHuntDiff2</li>
+									<li>introThreatsDiff2</li>
+									<li>questThreatsDiff2</li>
+									<li>majorThreatsDiff2</li>
+									<li>threatDiff2</li>
+									<li>toggleDiff2</li>
+									<li>labelDiff2</li>
+								</keys>
+							</li>
+						</settings>
+					</li>					
+				</rightCol>
+			</li>			
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+
+</Defs>
